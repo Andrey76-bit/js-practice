@@ -1,14 +1,15 @@
-function checkAge(age) {  // age — это аргумент
-    if (age < 18) {
-        console.log("Несовершеннолетний");
-    } else {
-        console.log("Совершеннолетний");
-    }
+function sum(a=0,b=0,c=0) {
+
+if (typeof a === "number" && typeof b === "number" && typeof c === "number") {
+console.log(a+b+c)
+} else {
+console.log("Неверные параметры")
 }
 
-// Теперь мы можем вызывать функцию с любым возрастом!
-checkAge(16);  // Несовершеннолетний
-checkAge(20);  // Совершеннолетний
-checkAge(10);  // Несовершеннолетний
 
 
+
+    
+    
+}
+sum(45,67,"Брат ты молодец как тебе такое");
