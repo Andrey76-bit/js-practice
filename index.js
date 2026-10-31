@@ -1,31 +1,14 @@
-const globalVar = "global";
-
-function globalFn () {
-    const a = "globalFn";
-
-function lokalFn1() {
-
-    const b = "lokalFn1";
-
-    const a = "lokalFn1 a";
-
-    console.log(b,a, globalVar);
-
+function checkAge(age) {  // age — это аргумент
+    if (age < 18) {
+        console.log("Несовершеннолетний");
+    } else {
+        console.log("Совершеннолетний");
+    }
 }
 
-function lokalFn2() {
+// Теперь мы можем вызывать функцию с любым возрастом!
+checkAge(16);  // Несовершеннолетний
+checkAge(20);  // Совершеннолетний
+checkAge(10);  // Несовершеннолетний
 
-    const c = "lokalFn2";
-
-    
-}
-
-lokalFn1 ();
-lokalFn2 ();
-
-
-
-}
-
-globalFn ();
 
